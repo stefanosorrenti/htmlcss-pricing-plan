@@ -212,3 +212,57 @@ ul li {
     align-items: center;
     gap: 15px;
 }
+
+
+/*Professional Plan Card*/
+
+.professional-plan-card {
+    background-color: #6500ff;
+
+}
+.professional-plan-card * {
+    color: white;
+}
+
+/*Plans Prices Section*/
+
+.professional-plan-card .price {
+    font-size: xx-large;
+    font-weight: 600;
+    position: relative;
+}
+
+.professional-plan-card .price::before {
+    content: ' \0024';
+    font-size: medium;
+}
+
+.professional-plan-card .price::after {
+    content: '/mo';
+    font-size: x-small;
+    
+}
+
+.professional-plan-card .chose-plan {
+    background-color: white;
+    color:#6500ff; ;
+}
+
+/*Ultimate Plan Card*/
+
+/*Plans Prices Section*/
+
+.ultimate-plan-card .price {
+    font-size: xx-large;
+    font-weight: 600;
+    position: relative;
+}
+
+.ultimate-plan-card .price::before {
+    content: ' \0024';
+    font-size: medium;
+}
+
+.ultimate-plan-card .price::after {
+    content: '/mo';
+    font-size: x-small;
