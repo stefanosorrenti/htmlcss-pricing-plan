@@ -13,6 +13,11 @@ h1 {
     
 }
 
+h2 {
+    color: black;
+    font-size: large;
+}
+
 /* Utility */
 
 .main-container {
@@ -20,13 +25,16 @@ h1 {
     margin: 20px auto;
 }
 
+.debug {
+    border: 2px dashed red;
+}
 /* Header */
-header {
+header.main-header {
     font-size: 11px;
     color: grey;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -100,4 +108,82 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* Main */
+
+ /* Cards layout */
+ .basic-plan-card {
+     /* padding: 15px; */
+ }
+ .cards-layout {
+     display: flex;
+     min-width: 300px;
+ }
+
+ mark {
+    background-color: #e3e3e3;
+    padding: 5px;
+    border-radius: 5px;
+ }
+
+/* Header cards */
+.header-card {
+    color: grey;
+    font-size: x-small;
+    text-align: left;
+    
+}
+
+
+/* Plans prices section */
+.plans-prices-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Basic Plan Card */
+
+
+.basic-plan-card .price {
+    font-size: xx-large;
+    font-weight: 600;
+    position: relative;
+}
+
+.basic-plan-card .price::before {
+    content: ' \0024';
+    font-size: medium;
+}
+
+.basic-plan-card .price::after {
+    content: '/mo';
+    font-size: x-small;
+    color: grey;
+}
+
+
+/*  Basic plan prices Sections */
+.plans-prices-section span:not(.price) {
+    font-size: x-small;
+
+}
+
+.chose-plan {
+    background-color: #6500ff;
+    border-style: none;
+    color: white;
+    padding: 15px;
+    width: 200px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* List */
+
+ul {
+    list-style-position: inside;
+    list-style: none;
 }
