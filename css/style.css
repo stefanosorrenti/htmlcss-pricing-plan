@@ -220,7 +220,7 @@ ul li {
     background-color: #6500ff;
 
 }
-.professional-plan-card * {
+.professional-plan-card *:not(mark) {
     color: white;
 }
 
