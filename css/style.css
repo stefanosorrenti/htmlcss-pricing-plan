@@ -15,7 +15,7 @@ h1 {
 
 h2 {
     color: black;
-    font-size: large;
+    font-size: x-large;
 }
 
 /* Utility */
@@ -113,12 +113,11 @@ input:checked + .slider:before {
 /* Main */
 
  /* Cards layout */
- .basic-plan-card {
-     /* padding: 15px; */
- }
+ 
  .cards-layout {
      display: flex;
      min-width: 300px;
+     margin-top: 50px;
  }
 
  mark {
@@ -141,10 +140,22 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 /* Basic Plan Card */
+
+.basic-plan-card, .professional-plan-card, 
+.ultimate-plan-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 12px -6px;
+    border-radius: 10px;
+    padding: 35px;
+    gap: 20px;
+}
 
 
 .basic-plan-card .price {
@@ -186,4 +197,18 @@ input:checked + .slider:before {
 ul {
     list-style-position: inside;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ul i {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
