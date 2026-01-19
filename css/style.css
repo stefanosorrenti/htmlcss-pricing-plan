@@ -253,6 +253,9 @@ ul li {
 }
 
 /*Ultimate Plan Card*/
+.ultimate-plan-card {
+    flex-grow: 1;
+}
 
 /*Plans Prices Section*/
 
