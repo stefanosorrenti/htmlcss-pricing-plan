@@ -112,12 +112,14 @@ input:checked + .slider:before {
 
 /* Main */
 
- /* Cards layout */
+ /* ---------Cards layout--------- */
  
  .cards-layout {
      display: flex;
      min-width: 300px;
      margin-top: 50px;
+     flex-wrap: wrap;
+     gap: 25px;
  }
 
  mark {
@@ -155,6 +157,8 @@ input:checked + .slider:before {
     border-radius: 10px;
     padding: 35px;
     gap: 20px;
+    flex-shrink: 0;
+    flex-basis: calc(100% / 3 - (25px * 2) / 3);
 }
 
 
